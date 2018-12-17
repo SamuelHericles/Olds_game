@@ -1,4 +1,4 @@
-# The Game-of-the-old
+# The Old's game
   1. Game with graphical interface;
   2. You must have the option to restart and quit the game at any time;
   3. Must constantly show the results chart;
