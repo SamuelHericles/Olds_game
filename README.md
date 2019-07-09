@@ -15,7 +15,7 @@
  3. Open in NetBeans with project;
  4. Run on the GameOfTheOld.java
 
-# Author
+# Authors
  + Samuel Hericles - samuel.hericles@outlook.com
  + Gerôniom Aguiar - geron@alu.ufc.br
 
