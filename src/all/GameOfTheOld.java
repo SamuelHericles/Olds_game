@@ -1,10 +1,10 @@
 /*
-DISCIPLINA: T�CNICAS DE PROGRAMACAO
+DISCIPLINE: PROGRAMMING TECHNIQUES
 
-DUPLA: SAMUEL HERICLES SOUZA SILVEIRA 
+Team: SAMUEL HERICLES SOUZA SILVEIRA 
        GERONIMO PEREIRA AGUIAR
 
-EMAIL: samuel.hericles@outlook.com
+e-mail: samuel.hericles@outlook.com
        geronimopereiraaguiar@gmail.com
 */
 package all;
@@ -13,8 +13,6 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-//imort java.io.File;
-//import java.net.URL;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -23,11 +21,11 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 
-//=== INICIO DO PROGRAMA ====
+//=== start of the prgram ====
 
 public class GameOfTheOld extends JFrame implements ActionListener{
 
-//==== INCIALIZAÇÃO DAS CLASSES E VARIAVEIS GLOBAIS ====    
+//==== starting the classes and global vars ====    
     
         JButton bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt10,bt11;
         JLabel lb1,lb2,lb3;
@@ -41,7 +39,7 @@ public class GameOfTheOld extends JFrame implements ActionListener{
         ImageIcon imgX,imgO;
 
 
-//==== FORMATACAO DOS BOTOES,TELA E LABELS ====    
+//==== formats buttons, screens and labels ====    
         
 public GameOfTheOld(){
 
@@ -178,24 +176,24 @@ public GameOfTheOld(){
         tela.setLocationRelativeTo(null);
         tela.setVisible(true); 
         
-    }//====FIM DA FORMATACAO====
+    }O//====End formats====
 
-//====ACOES====    
+//====Actions====    
     
 @Override
 public void actionPerformed(ActionEvent e) {
     
-//====IMAGENS DO X E O  60X60 PIXELS====
+//====IMAGES of the  X E O  60X60 PIXELS====
 
         imgX = new ImageIcon(".\\game-of-the-old\\src\\all\\letra_49.png.jpg");
         imgO = new ImageIcon(".\\game-of-the-old\\src\\all\\letra_40.png.jpg");
         
-//==== PLACAR ====
+//==== SCOREBOARD ====
 
         lb2.setText("(player 1)X = "+String.valueOf(d));   
         lb3.setText("(player 2)O = "+String.valueOf(f));
 
-//====A LOGICA PARA ALTERNAR X E O E VAZIO====        
+//====The logic for altern X and O or empty====        
         
 //==== a11 , b11 ====
 
@@ -334,9 +332,9 @@ public void actionPerformed(ActionEvent e) {
                 bt11.setEnabled(false);
             }
   
-//==== FIM DA LOGICA ====            
+//==== End logic ====            
 
-//==== TESTAR PARA SABER QUEM VENCEU ====
+//==== Test for to know what the winner ====
             
             if((a11==1)&&(a12==1)&&(a13==1)){
                 d++;
@@ -796,9 +794,9 @@ public void actionPerformed(ActionEvent e) {
             }
             
             
-//==== FIM DO TESTADOR ====
+//==== End of tester ====
                                 
-//==== REINICIAR ==== 
+//==== Restart ==== 
 
         if(e.getSource() == bt1){
             a=0;
@@ -824,16 +822,16 @@ public void actionPerformed(ActionEvent e) {
             bt11.setEnabled(true);    
         }       
         
-//==== SAIR DO JOGO ====
+//==== Exit to game ====
         if(e.getSource() == bt2){ 
             tela.setVisible(false);
             tela.dispose();
             System.exit(0);
         }
         
-    }//====FIM DAS ACOES====  
+    }//====End of the actions ====  
  
-//==== ABRIR O JOGO, ATIVAR ====
+//==== Open the game,to active====
 
 public static void main(String[] args) {
 
@@ -841,5 +839,5 @@ public static void main(String[] args) {
 
     }
 
-}//==== FIM DO PROGRAMA ====
+}//==== End the program ===
 
